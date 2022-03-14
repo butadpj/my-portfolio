@@ -1,4 +1,4 @@
 node_modules
 dist
 README.md
-package-lock
+package-lock.json
