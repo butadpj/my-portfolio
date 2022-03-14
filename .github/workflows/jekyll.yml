@@ -12,7 +12,10 @@ jobs:
       - uses: actions/checkout@v2
       - run: npm install
       - run: npm run build
+
       - name: Deploy
+        uses: butadpj/my-portfolio@v1.0.0
         with:
           target_branch: github-pages
           build_dir: build
+          force: true
