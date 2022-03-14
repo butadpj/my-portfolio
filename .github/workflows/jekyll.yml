@@ -1,4 +1,4 @@
-name: GithubPages CI
+name: Jekyll site CI
 
 on:
   push:
@@ -10,15 +10,14 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - name: Setup Node
+        uses: actions/setup-node@v2
         with:
           node-version: '14'
       - run: npm install
       - run: npm run build
-
       - name: Deploy
         uses: butadpj/my-portfolio@v1.0.0
         with:
-          target_branch: github-pages
-          build_dir: build
-          force: true
+          branch: github-pages
+          directoroy: /build
