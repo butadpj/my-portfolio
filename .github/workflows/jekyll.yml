@@ -14,7 +14,6 @@ jobs:
     - run: npm install
     - run: npm run build
     - name: Deploy
-      uses: butadpj/my-portfolio@v1
       with: 
         target_branch: github-pages
         buil_dir: build
