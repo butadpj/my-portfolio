@@ -1,0 +1,21 @@
+name: GithubPages CI
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - run: npm install
+    - run: npm run build
+    - name: Deploy
+      uses: butadpj/my-portfolio@v1
+      with: 
+        target_branch: github-pages
+        buil_dir: build
+        
