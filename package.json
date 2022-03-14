@@ -16,7 +16,7 @@
     "build": "webpack --config webpack.prod.js",
     "prod": "npm run build",
     "postinstall": "node ./node_modules/husky/lib/installer/bin install",
-    "deploy": "git push origin `git subtree add --prefix dist master`:gh-pages --force"
+    "deploy": "git push origin `git subtree add --prefix dist master`:gh-pages --force git config --global user.email butadpj@gmail.com git config --global user.name butadpj"
   },
   "author": "",
   "license": "ISC",
