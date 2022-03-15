@@ -7,7 +7,7 @@
   --primary-dark: rgb(20, 74, 214);
 
   --secondary: rgb(238, 104, 7);
-  --seconary-fade: rgb(238, 104, 7, 0.1);
+  --secondary-fade: rgb(238, 104, 7, 0.1);
 
   --dark: rgb(18, 18, 19);
   --light: rgb(242, 242, 242);
@@ -37,6 +37,53 @@ h4 {
   font-weight: 500;
 }
 
+a {
+  text-decoration: none;
+}
+
 span {
   color: var(--primary-dark);
+}
+
+.hoverable {
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.hoverable:hover {
+  filter: brightness(80%);
+}
+
+.no-highlight {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+.no-highlight:focus {
+  outline: none !important;
+}
+
+button {
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: var(--font-1);
+  border-radius: 5px;
+  color: var(--light);
+  background-color: var(--primary-dark);
+  border: 1px solid var(--primary-dark);
+  transition: all 0.3s ease-out;
+}
+
+button:hover {
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+}
+
+button.outline-light {
+  color: var(--light);
+  border: 1px solid var(--light);
+  background-color: transparent;
+}
+
+button.outline-light:hover {
+  border: 1px solid var(--dark);
+  box-shadow: inset 8rem 0 0 0 var(--dark);
 }
