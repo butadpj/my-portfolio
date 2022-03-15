@@ -16,7 +16,7 @@ jobs:
         run: |
           git config --global user.name "butadpj"
           git config --global user.email "butadpj@gmail.com"
-          git config --global credential.helper wincred
+          git config --global credential.helper store
 
       - name: Install dependencies and Build the app
         run: |
