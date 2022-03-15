@@ -6,6 +6,7 @@
 }
 
 .hero-img {
+  max-width: 25rem;
   transform: translateX(2%);
   width: 100%;
   z-index: 2;
@@ -33,19 +34,19 @@
     transform: rotate(0deg);
   }
   10% {
-    transform: rotate(14deg);
+    transform: rotate(40deg);
   } /* The following five values can be played with to make the waving more or less extreme */
   20% {
-    transform: rotate(-8deg);
+    transform: rotate(-15deg);
   }
   30% {
-    transform: rotate(14deg);
+    transform: rotate(30deg);
   }
   40% {
-    transform: rotate(-4deg);
+    transform: rotate(-10deg);
   }
   50% {
-    transform: rotate(10deg);
+    transform: rotate(15deg);
   }
   60% {
     transform: rotate(0deg);
