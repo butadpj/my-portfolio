@@ -9,23 +9,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
+      uses: actions/checkout@v2
+      uses: actions/setup-node@v2
 
-      - name: Check out repository code
-        uses: actions/checkout@v2
+      - name: Install dependencies and Build the app
+        run: |
+          npm install
+          npm run build
 
-      - name: Setup nodejs
-        uses: actions/setup-node@v2
-
-      - run: echo "🖥️ The workflow is now ready to test your code on the runner."
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build the app
-        run: npm run build
-
-      - run: echo "🍏 This job's status is ${{ job.status }}."
       # - name: Setup Node
       #   uses: actions/setup-node@v2
       #   with:
