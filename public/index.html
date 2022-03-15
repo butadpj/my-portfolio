@@ -8,10 +8,10 @@
       content="I'm Paul, I love solving people's problems with my passion in technology and design."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="/node_modules/@fortawesome/fontawesome-free/css/all.css"
-      rel="stylesheet"
-    />
+    <script
+      src="https://kit.fontawesome.com/5427cff733.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -33,6 +33,8 @@
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/navbar.css" />
     <link rel="stylesheet" href="./css/hero.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/collapsible.css" />
     <link rel="stylesheet" href="./css/scroll.css" />
     <title>butadpj - Developer</title>
   </head>
@@ -46,16 +48,53 @@
         <i class="fa-solid fa-bars"></i>
       </div>
     </nav>
-    <section class="hero">
-      <img class="illustration" src="./assets/coder.svg" alt="" width="255" />
-      <div class="hero-text parallax" data-rate="-2">
-        I am a Developer. &lt;/&gt;
-      </div>
+    <section id="hero">
+      <img class="hero-img" src="./assets/coder.svg" alt="" width="255" />
+      <h1 class="hero-text parallax" data-rate="-2">
+        I am a Developer &lt;/&gt;
+      </h1>
 
       <div class="scroll-down parallax-opacity" data-rate="-1">
         <div class="chevron"></div>
         <div class="chevron"></div>
         <div class="chevron"></div>
+      </div>
+    </section>
+    <section id="about">
+      <h2 class="about-hello">Hello 👋,</h2>
+      <div class="about-text">
+        I'm Paul, I love solving people's problems with my passion in
+        <span>technology</span> and <span>design</span>.
+      </div>
+      <div class="experiences collapse">
+        <h4 class="collapse-toggle">
+          Experiences: <i class="fa-solid fa-angle-down"></i>
+        </h4>
+        <ul class="collapse-content open">
+          <li>3 years of experience in <span>Frontend Development</span></li>
+          <li>1 year of experience in ReactJS and <span>UI/UX design</span></li>
+          <li>
+            1 years of experience in <span>Backend (API) Development</span>
+          </li>
+        </ul>
+      </div>
+      <div class="more-info collapse">
+        <h4 class="collapse-toggle">
+          More info: <i class="fa-solid fa-angle-right"></i>
+        </h4>
+        <ul class="collapse-content">
+          <li>Self taught ✨</li>
+          <li>From Philippines 🇵🇭</li>
+        </ul>
+      </div>
+      <div class="fun-facts collapse">
+        <h4 class="collapse-toggle">
+          Fun facts about me: <i class="fa-solid fa-angle-right"></i>
+        </h4>
+        <ul class="collapse-content">
+          <li>I love boxing 🥊</li>
+          <li>I love rap music 🎵</li>
+        </ul>
       </div>
     </section>
     <script src="bundle.js"></script>
