@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Mitr:wght@400;500;600;700&display=swap');
+
+:root {
+  --primary: rgb(82, 131, 255);
+  --primary-light: rgb(115, 142, 214);
+  --primary-light-fade: rgba(115, 141, 214, 0.1);
+  --primary-dark: rgb(20, 74, 214);
+
+  --secondary: rgb(238, 104, 7);
+  --seconary-fade: rgb(238, 104, 7, 0.1);
+
+  --dark: rgb(18, 18, 19);
+  --light: rgb(242, 242, 242);
+  --light-bg: rgb(238, 243, 255);
+
+  --font-1: 'Mitr', sans-serif;
+  --font-2: 'K2D', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--light-bg);
+  font-family: var(--font-1);
+  font-display: swap;
+  padding-bottom: 50rem;
+}
