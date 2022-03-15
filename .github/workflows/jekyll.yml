@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Setup nodejs
-      - uses: actions/setup-node@v2
+        uses: actions/setup-node@v2
 
       - run: echo "🖥️ The workflow is now ready to test your code on the runner."
 
