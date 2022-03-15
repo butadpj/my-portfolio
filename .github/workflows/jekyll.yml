@@ -12,6 +12,11 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
 
+      - name: Configure git for first-time setup
+        run: |
+          git config --global user.name "butadpj"
+          git config --global user.email "butadpj@gmail.com"
+
       - name: Install dependencies and Build the app
         run: |
           npm install
