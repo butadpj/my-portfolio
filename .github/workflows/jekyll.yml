@@ -14,10 +14,14 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v2
 
+      - name: Setup nodejs
+      - uses: actions/setup-node@v2
+
       - run: echo "🖥️ The workflow is now ready to test your code on the runner."
 
       - name: Install dependencies and build the app
-        run: npm install & npm run build
+        run: npm install
+        run: npm run build
 
       - run: echo "🍏 This job's status is ${{ job.status }}."
       # - name: Setup Node
