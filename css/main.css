@@ -29,3 +29,14 @@ body {
   font-display: swap;
   padding-bottom: 50rem;
 }
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 500;
+}
+
+span {
+  color: var(--primary-dark);
+}

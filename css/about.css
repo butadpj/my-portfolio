@@ -1,0 +1,22 @@
+#about {
+  padding: 2rem;
+  display: flex;
+  flex-flow: column;
+  row-gap: 2rem;
+}
+
+.about-hello {
+  color: var(--primary-dark);
+}
+
+.about-text {
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+#about h4 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--primary);
+}
