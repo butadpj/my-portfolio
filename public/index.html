@@ -88,13 +88,20 @@
       </div>
     </nav>
     <section id="hero">
-      <img
-        class="hero-img"
-        src="./assets/coder.svg"
-        alt="illustration-coder"
-        width="255"
-      />
-      <h1 class="hero-text parallax" data-rate="-2">
+      <div class="hero-img">
+        <img
+          class="coder"
+          src="./assets/coder.svg"
+          alt="illustration-coder"
+          width="255"
+        />
+
+        <div class="dots parallax" data-rate="5">
+          <img src="./assets/dots.svg" alt="dots-img" width="26" />
+        </div>
+      </div>
+
+      <h1 class="hero-text parallax" data-rate="-2.5">
         I am a Developer &lt;/&gt;
       </h1>
 
@@ -146,6 +153,9 @@
 
       <div class="project-previews">
         <div class="preview no-highlight">
+          <div class="super-project">
+            <i class="fa-solid fa-star"></i> Super project
+          </div>
           <img
             class="preview-logo"
             src="./assets/game-antena-logo.svg"
@@ -156,11 +166,64 @@
             Browse Top Games and Streams from popular platforms like Twitch &
             Youtube
 
+            <div class="tags">
+              <span>Frontend</span>
+              <span>ReactJS</span>
+              <span>Redux</span>
+              <span>React Query</span>
+            </div>
+
             <div class="preview-buttons">
-              <a href="./project-ga.html">
+              <a href="./project-ga-frontend.html">
                 <button class="outline-light">View details</button>
               </a>
               <a href="https://game-antena.com" target="_blank">
+                <button class="hoverable">Live demo</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="preview no-highlight">
+          <p class="preview-logo">Game-Antena's (API) backend</p>
+          <div class="preview-info">
+            Game-Antena's API made with Typescript (NestJS)
+
+            <div class="tags">
+              <span>API Integration</span>
+              <span>Docker</span>
+              <span>CI/CD</span>
+              <span>PostgreSQL</span>
+            </div>
+
+            <div class="preview-buttons">
+              <a href="./project-ga-backend.html">
+                <button class="outline-light">View details</button>
+              </a>
+              <a
+                href="https://api.game-antena.com/twitch/gaming-streams"
+                target="_blank"
+              >
+                <button class="hoverable">Live demo</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="preview no-highlight">
+          <p class="preview-logo">Bracketour</p>
+          <div class="preview-info">
+            Tournament bracket generator using JavaScript
+
+            <div class="tags">
+              <span>Vanilla JS</span>
+              <span>Jest (Testing)</span>
+              <span>Modularized Code</span>
+            </div>
+
+            <div class="preview-buttons">
+              <a href="./project-bracketour.html">
+                <button class="outline-light">View details</button>
+              </a>
+              <a href="https://butadpj.github.io/bracketour/" target="_blank">
                 <button class="hoverable">Live demo</button>
               </a>
             </div>

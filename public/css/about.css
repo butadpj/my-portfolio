@@ -8,18 +8,24 @@
 }
 
 .about-hello {
+  font-size: 1.8rem;
   color: var(--primary-dark);
 }
 
 .about-text {
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin-bottom: 1rem;
 }
 
-#about h4 {
+#about .collapse-toggle {
   display: flex;
   align-items: center;
   gap: 0.5rem;
   color: var(--primary);
+  width: fit-content;
+}
+
+#about .collapse {
+  font-size: 1.1rem;
 }

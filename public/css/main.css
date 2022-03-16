@@ -26,7 +26,6 @@
 body {
   background-color: var(--light-bg);
   font-family: var(--font-1);
-  font-display: swap;
   padding-bottom: 50rem;
 }
 
@@ -86,4 +85,26 @@ button.outline-light {
 button.outline-light:hover {
   border: 1px solid var(--dark);
   box-shadow: inset 8rem 0 0 0 var(--dark);
+}
+
+.section-title {
+  font-size: 2rem;
+  font-family: var(--font-2);
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: var(--secondary);
+  position: relative;
+  width: fit-content;
+}
+
+.section-title:before {
+  content: '';
+  display: inline-block;
+  width: 180%;
+  height: 80%;
+  background-color: var(--secondary-fade);
+  position: absolute;
+  left: 0%;
+  top: 50%;
+  transform: translateX(-50%);
 }

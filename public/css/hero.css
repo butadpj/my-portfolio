@@ -6,10 +6,25 @@
 }
 
 .hero-img {
-  max-width: 25rem;
-  transform: translateX(2%);
+  position: relative;
   width: 100%;
   z-index: 2;
+  max-width: 25rem;
+}
+
+.hero-img .coder {
+  width: 100%;
+}
+
+.hero-img .dots {
+  position: absolute;
+  top: 20%;
+  right: -3%;
+  z-index: -1;
+}
+
+.hero-img .dots img {
+  width: 100%;
 }
 
 .hero-text {
@@ -17,6 +32,7 @@
   text-align: center;
   font-size: 2.5rem;
   letter-spacing: 2px;
+  padding: 0 2rem;
   color: var(--primary);
   text-shadow: 0px 3px 0px var(--secondary);
 }
