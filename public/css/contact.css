@@ -1,0 +1,38 @@
+#contact {
+  background-color: var(--dark);
+  padding: 3rem 10vw 2rem 10vw;
+  font-family: var(--font-2);
+}
+
+.contact-info {
+  font-size: 1.1rem;
+  color: var(--light);
+  margin: 5rem 0 5rem 0.5rem;
+  letter-spacing: 1px;
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+}
+
+.info-group label {
+  color: var(--primary-light);
+}
+
+.my-resume {
+  margin-top: 2rem;
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+  font-size: 2.5rem;
+  width: fit-content;
+  color: var(--light);
+  margin: 0 auto 1.5rem auto;
+}
+
+.copyright {
+  color: var(--primary-light);
+  text-align: center;
+  margin-top: 1.5rem;
+}

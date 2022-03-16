@@ -2,8 +2,9 @@
 
 :root {
   --primary: rgb(82, 131, 255);
-  --primary-light: rgb(115, 142, 214);
-  --primary-light-fade: rgba(115, 141, 214, 0.1);
+  --primary-fade: rgb(82, 131, 255, 0.15);
+  --primary-light: rgb(118, 131, 165);
+  --primary-light-fade: rgba(118, 131, 165, 0.15);
   --primary-dark: rgb(20, 74, 214);
 
   --secondary: rgb(238, 104, 7);
@@ -26,7 +27,6 @@
 body {
   background-color: var(--light-bg);
   font-family: var(--font-1);
-  padding-bottom: 50rem;
 }
 
 h1,
@@ -37,6 +37,7 @@ h4 {
 }
 
 a {
+  color: inherit;
   text-decoration: none;
 }
 
@@ -92,9 +93,13 @@ button.outline-light:hover {
   font-family: var(--font-2);
   font-weight: 800;
   letter-spacing: 2px;
-  color: var(--secondary);
+  color: var(--primary);
   position: relative;
   width: fit-content;
+}
+
+.section-title.secondary {
+  color: var(--secondary);
 }
 
 .section-title:before {
@@ -102,9 +107,13 @@ button.outline-light:hover {
   display: inline-block;
   width: 180%;
   height: 80%;
-  background-color: var(--secondary-fade);
+  background-color: var(--primary-fade);
   position: absolute;
   left: 0%;
   top: 50%;
   transform: translateX(-50%);
+}
+
+.section-title.secondary::before {
+  background-color: var(--secondary-fade);
 }
