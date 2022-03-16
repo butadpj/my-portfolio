@@ -4,39 +4,40 @@
   margin: 0 auto;
 }
 
-#projects .section-title {
-  font-size: 2rem;
-  font-family: var(--font-2);
-  font-weight: 800;
-  letter-spacing: 2px;
-  color: var(--secondary);
-  position: relative;
-}
-
-.section-title:before {
-  content: '';
-  display: inline-block;
-  width: 50%;
-  height: 80%;
-  background-color: var(--secondary-fade);
-  position: absolute;
-  left: 10%;
-  top: 50%;
-  transform: translateX(-50%);
-}
-
 .project-previews {
   display: flex;
   flex-flow: row wrap;
+  align-items: flex-start;
   justify-content: center;
   gap: 2rem;
   margin-top: 5rem;
 }
 
 .preview {
+  position: relative;
   border-radius: 10px;
   max-width: 20rem;
   box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+}
+
+.preview .super-project {
+  content: 'Super project';
+  position: absolute;
+  top: -3%;
+  right: -5%;
+  color: var(--secondary);
+  transform: rotate(25deg);
+  width: min-content;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-family: var(--font-2);
+  font-weight: 800;
+}
+
+.super-project i {
+  font-size: 1.5rem;
 }
 
 .preview-logo {
@@ -45,19 +46,25 @@
   max-width: 15rem;
   display: block;
   margin: 0 auto;
+  text-align: center;
+  font-size: 1.4rem;
+  font-family: var(--font-2);
+  font-weight: 500;
 }
 
 .preview-info {
   color: var(--light);
-  padding: 1rem 1.5rem;
+  padding: 1rem 1.5rem 1.5rem 1.5rem;
   background-color: var(--primary);
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
+  display: flex;
+  flex-flow: column;
+  gap: 1.5rem;
 }
 
 .preview-buttons {
   font-size: 1rem;
-  margin-top: 1.5rem;
   display: flex;
   gap: 1rem;
   justify-content: space-between;
@@ -65,4 +72,20 @@
 
 .preview-buttons button {
   padding: 0.5rem 0.8rem;
+}
+
+.preview-info .tags {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+}
+
+.preview-info .tags > * {
+  padding: 0.4rem 1rem;
+  border-radius: 50rem;
+  background-color: var(--primary-light);
+  color: var(--light);
+  font-size: 0.9rem;
+  font-family: var(--font-2);
+  font-weight: 500;
 }
