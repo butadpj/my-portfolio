@@ -1,7 +1,5 @@
 #projects {
   padding: 4rem 1.5rem;
-  max-width: 80rem;
-  margin: 0 auto;
 }
 
 .project-previews {
@@ -25,7 +23,7 @@
   position: absolute;
   top: -3%;
   right: -5%;
-  color: var(--secondary);
+  color: var(--accent);
   transform: rotate(25deg);
   width: min-content;
   text-align: center;
@@ -88,4 +86,17 @@
   font-size: 0.9rem;
   font-family: var(--font-2);
   font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  #projects .section-title {
+    padding-left: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  #projects .section-title {
+    padding-left: 5rem;
+    font-size: 2.7rem;
+  }
 }
