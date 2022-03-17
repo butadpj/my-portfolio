@@ -1,4 +1,4 @@
-name: GH PAGES CI/CD
+name: Jekyll site CI
 
 on:
   push:
@@ -6,7 +6,6 @@ on:
 
 jobs:
   build:
-    concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
     runs-on: ubuntu-latest
 
     steps:
@@ -19,7 +18,7 @@ jobs:
           npm run build
 
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4.2.5
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          branch: gh-pages
-          folder: build
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
