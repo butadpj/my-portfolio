@@ -57,7 +57,7 @@
   align-items: center;
   justify-content: flex-end;
   gap: 2rem;
-  height: 100vh;
+  z-index: 4;
 }
 
 .navbar-content:hover {
@@ -84,6 +84,7 @@
   font-size: 1.2rem;
   font-family: var(--font-2);
   font-weight: 800;
+  color: var(--light);
 }
 
 .nav-link.active {
@@ -99,7 +100,7 @@
 
 .navbar-content.show {
   transform: translateX(0vw);
-  touch-action: none;
+  /* touch-action: none; */
 }
 
 .navbar-logo.hide {
@@ -135,6 +136,17 @@
   .navbar-close {
     top: 5%;
     right: 6%;
+  }
+
+  .navbar-links {
+    font-size: 1.3rem;
+  }
+  .navbar .my-resume {
+    font-size: 1.1rem;
+  }
+
+  .navbar .socials {
+    font-size: 2.8rem;
   }
 }
 
