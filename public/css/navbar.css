@@ -6,28 +6,32 @@
   justify-content: space-between;
   padding: 1rem 1.5rem;
   background-color: var(--light-bg);
-  border-bottom: 1px solid var(--primary-light);
+  border-bottom: 1px solid var(--primary);
   z-index: 3;
+  top: 0;
+  transition: transform 0.3s ease-out;
+  transform: translateY(0vh);
 }
 
-.logo {
+.navbar-logo {
   font-family: var(--font-2);
   font-style: italic;
   font-size: 1.2rem;
   font-weight: 800;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   gap: 0.3rem;
+  opacity: 1;
+  transition: all 0.3s ease-out;
 }
 
-.logo img {
-  width: 22px;
-  height: 100%;
+.navbar-logo img {
+  width: 100%;
 }
 
-.logo-text {
+.navbar-logo-text {
   color: var(--primary);
-  text-shadow: 0px 1px 0px var(--secondary);
+  text-shadow: 0px 1px 0px var(--accent);
 }
 
 .navbar-bars {
@@ -36,4 +40,140 @@
   border-radius: 5px;
   background-color: var(--primary);
   color: var(--light);
+}
+
+.navbar-content {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 20%;
+  right: 0;
+  transform: translateX(100vw);
+  background-color: var(--primary);
+  color: var(--light);
+  transition: all 0.4s ease-out;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2rem;
+  height: 100vh;
+}
+
+.navbar-content:hover {
+  transform: translateX(100vw);
+}
+
+.navbar-close {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-close i {
+  font-size: 2rem;
+}
+
+.navbar-links {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 2rem;
+  list-style-type: none;
+  font-size: 1.2rem;
+  font-family: var(--font-2);
+  font-weight: 800;
+}
+
+.nav-link.active {
+  text-decoration: underline;
+  text-decoration-thickness: 0.3rem;
+  text-underline-offset: 0.3rem;
+}
+
+/* Toggle class */
+.navbar.hide {
+  transform: translateY(-20vh);
+}
+
+.navbar-content.show {
+  transform: translateX(0vw);
+  touch-action: none;
+}
+
+.navbar-logo.hide {
+  opacity: 0;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    background-color: transparent;
+    border-bottom: none;
+    padding: 1.5rem 2.5rem;
+  }
+
+  .navbar-logo {
+    font-size: 1.5rem;
+    gap: 0.4rem;
+  }
+
+  .navbar-logo img {
+    width: 2rem;
+  }
+
+  .navbar-bars {
+    font-size: 2.5rem;
+    color: var(--primary);
+    background-color: transparent;
+  }
+
+  .navbar-content {
+    left: 50%;
+  }
+
+  .navbar-close {
+    top: 5%;
+    right: 6%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar {
+    padding: 2rem 4rem;
+  }
+
+  .navbar-logo {
+    font-size: 1.7rem;
+    gap: 0.4rem;
+  }
+
+  .navbar-logo img {
+    width: 2rem;
+  }
+
+  .navbar-bars {
+    font-size: 2.7rem;
+  }
+
+  .navbar-content {
+    left: 60%;
+  }
+
+  .navbar-close {
+    top: 7%;
+    right: 11%;
+  }
+
+  .navbar-links {
+    font-size: 1.5rem;
+  }
+
+  .navbar .my-resume {
+    font-size: 1.2rem;
+  }
+
+  .navbar .socials {
+    font-size: 3rem;
+  }
 }

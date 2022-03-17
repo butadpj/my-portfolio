@@ -1,9 +1,9 @@
 #about {
-  padding: 2rem;
+  padding: 2rem 2.5rem;
   display: flex;
   flex-flow: column;
   row-gap: 2rem;
-  max-width: 45rem;
+  max-width: 40rem;
   margin: 0 auto;
 }
 
