@@ -6,13 +6,6 @@ const navbarContent = document.querySelector('.navbar-content');
 const navLinks = document.querySelectorAll('.nav-link');
 const sections = document.querySelectorAll('section');
 
-// navbarContent.style.height = window.outerHeight;
-
-document.documentElement.style.setProperty(
-  '--vh',
-  `${window.innerHeight / 100}px`,
-);
-
 const BODY = document.documentElement || document.body;
 
 navbarBars.addEventListener('click', () => {
