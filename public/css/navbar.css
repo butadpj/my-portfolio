@@ -44,8 +44,7 @@
 
 .navbar-content {
   position: fixed;
-  top: 0;
-  bottom: 0;
+  height: 100%;
   left: 20%;
   right: 0;
   transform: translateX(100vw);
