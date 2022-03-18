@@ -78,15 +78,50 @@ button:hover {
   box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
 }
 
+button.dark {
+  color: var(--light);
+  background-color: var(--dark);
+  border: 1px solid var(--dark);
+}
+
+button.outline {
+  color: var(--primary-dark);
+  border: 1px solid var(--primary-dark);
+  background-color: transparent;
+}
+
 button.outline-light {
   color: var(--light);
   border: 1px solid var(--light);
   background-color: transparent;
 }
 
+button.outline-dark {
+  color: var(--dark);
+  border: 1px solid var(--dark);
+  background-color: transparent;
+}
+
+button.outline:hover {
+  color: var(--light);
+  border: 1px solid var(--primary-dark);
+  box-shadow: inset 8rem 0 0 0 var(--primary-dark);
+}
+
 button.outline-light:hover {
   border: 1px solid var(--dark);
   box-shadow: inset 8rem 0 0 0 var(--dark);
+}
+
+button.outline-dark:hover {
+  color: var(--light);
+  border: 1px solid var(--dark);
+  box-shadow: inset 8rem 0 0 0 var(--dark);
+}
+
+ul {
+  font-family: var(--font-2);
+  list-style-position: inside;
 }
 
 .section-title {
