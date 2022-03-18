@@ -1,5 +1,5 @@
 .project-details {
-  padding: 6rem 0 5rem 0;
+  padding: 6rem 0 2rem 0;
 }
 
 .go-back {
@@ -26,4 +26,134 @@
 .project-details .section-title:before {
   top: 28%;
   width: 100%;
+}
+
+.swiper {
+  height: 15rem;
+}
+
+.swiper-wrapper {
+  align-items: center;
+}
+
+.swiper-slide {
+  color: var(--light);
+  padding: 1rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  gap: 1rem;
+  text-align: center;
+}
+
+.parallax-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 130%;
+  height: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.swiper-slide .title {
+  font-size: 2rem;
+}
+
+.swiper-slide .text {
+  font-size: 1.2rem;
+  max-width: 30rem;
+}
+
+.project-info {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  gap: 3rem;
+  padding: 2rem 1.5rem;
+}
+
+.description {
+  font-size: 1.2rem;
+  max-width: 40rem;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.buttons button {
+  padding: 0.3rem 0.8rem;
+  font-size: 1.2rem;
+}
+
+.technologies {
+  width: 100%;
+  max-width: 40rem;
+}
+
+.technologies h2 {
+  color: var(--primary-dark);
+  margin-bottom: 1rem;
+}
+
+.technologies-list {
+  display: flex;
+  flex-flow: column;
+  gap: 1.2rem;
+  font-size: 1.3rem;
+  font-weight: 800;
+  font-style: italic;
+  margin-left: 0.5rem;
+}
+
+.technologies-list li a {
+  text-decoration: underline;
+  text-decoration-color: var(--primary-dark);
+}
+
+@media (min-width: 768px) {
+  .project-details {
+    padding-top: 8rem;
+  }
+
+  .top-wrapper {
+    padding-left: 2rem;
+  }
+
+  .swiper {
+    height: 25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .top-wrapper {
+    padding-left: 5rem;
+  }
+
+  .swiper {
+    height: 30rem;
+  }
+
+  .swiper-slide {
+    gap: 2rem;
+  }
+
+  .swiper-slide .title {
+    font-size: 3rem;
+  }
+
+  .swiper-slide .text {
+    font-size: 1.5rem;
+    max-width: 30rem;
+  }
+
+  .project-info {
+    padding: 4rem 1.5rem;
+  }
 }

@@ -72,7 +72,7 @@
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/navbar.css" />
     <link rel="stylesheet" href="./css/project-details.css" />
-    <title>Project - Game-Antena</title>
+    <title>Project - Game-Antena (backend)</title>
   </head>
   <body>
     <nav class="navbar">
@@ -146,7 +146,7 @@
 
         <h2 class="section-title secondary">
           Project -
-          <div>Game-Antena</div>
+          <div>Game-Antena (backend)</div>
         </h2>
       </div>
 
@@ -156,22 +156,25 @@
       >
         <div
           class="parallax-bg"
-          style="background-image: url(./assets/slider-bg-ga.png)"
+          style="background-image: url(./assets/slider-bg-ga-backend.png)"
           data-swiper-parallax="-23%"
         ></div>
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="title" data-swiper-parallax="-300">The purpose</div>
             <div class="text" data-swiper-parallax="-100">
-              <p>To keep users connected with everything in gaming</p>
+              <p>
+                To provide seamless data processing and API handling for
+                Game-Antena's frontend
+              </p>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="title" data-swiper-parallax="-300">The approach</div>
             <div class="text" data-swiper-parallax="-100">
               <p>
-                Integrate big platform's services that are related to gaming &
-                streaming
+                Develop simple and easy to use API endpoints that the frontend
+                would use
               </p>
             </div>
           </div>
@@ -183,20 +186,20 @@
 
       <div class="project-info">
         <div class="description">
-          Game-Antena is a platform that is tailored to gamers/streamers. It
-          allows users to <span> browse top games</span> & <span>streams</span>,
-          and <span>easily check their channel's important stats</span> such as
-          subscribers, followers, and its total count
+          Developing Game-Antena's API (backend) has been a journey
         </div>
 
         <div class="buttons">
-          <a href="https://github.com/nismocoder/GameAntena" target="_blank">
+          <a href="https://github.com/butadpj/ga_backend" target="_blank">
             <button class="outline-dark">
               Repo <i class="fa-brands fa-github"></i>
             </button>
           </a>
 
-          <a href="https://game-antena.com" target="_blank">
+          <a
+            href="https://api.game-antena.com/twitch/gaming-streams"
+            target="_blank"
+          >
             <button class="outline">Live demo</button>
           </a>
         </div>
@@ -204,14 +207,10 @@
         <div class="technologies">
           <h2>Technologies:</h2>
           <ul class="technologies-list">
-            <li><span>Frontend</span> - ReactJS, Redux, React Query</li>
-            <li>
-              <a href="./project-ga-backend.html"><span>Backend</span></a>
-              - NestJS, TypeScript, Docker, PostgreSQL
-            </li>
-            <li>
-              <span>Quality Assurance</span> - Jest, React testing library
-            </li>
+            <li><span>Language/Tools</span> - NestJS (TypeScript), Docker</li>
+            <li><span>Database</span> - PostgreSQL, TypeORM</li>
+            <li><span>Quality Assurance</span> - Jest</li>
+            <li><span>Hosting</span> - Heroku</li>
           </ul>
         </div>
       </div>
