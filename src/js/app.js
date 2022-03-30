@@ -5,6 +5,7 @@ import './project-details';
 import * as lib from './butter';
 
 lib.butter.init({
+  wrapperId: 'butter',
   cancelOnTouch: true,
   wrapperDamper: 0.05,
 });
