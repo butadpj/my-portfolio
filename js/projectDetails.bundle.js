@@ -1,1 +1,0 @@
-(()=>{const c=document.querySelector(".go-back");c&&c.addEventListener("click",(()=>{history.back()}))})();
