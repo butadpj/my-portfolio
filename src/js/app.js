@@ -1,7 +1,4 @@
-import './parallax';
-import './collapsible';
 import './navbar';
-import './project-details';
 import * as lib from './butter';
 
 lib.butter.init({
