@@ -175,5 +175,6 @@ ul {
 }
 
 #butter {
-  transform: translate3d(0px, 0px, 0px);
+  position: relative;
+  overflow-x: hidden;
 }
