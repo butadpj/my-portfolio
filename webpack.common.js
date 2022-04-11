@@ -1,15 +1,18 @@
 const path = require('path');
+const { chunksEntryPoints } = require('./utils/chunksEntryPoints');
+const { getPagesTemplate } = require('./utils/getPagesTemplate');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-  entry: './src/js/app.js',
+  entry: chunksEntryPoints,
   output: {
     path: path.resolve(__dirname, 'build/'),
-    filename: 'bundle.js',
+    filename: 'js/[name].js',
   },
   plugins: [
     new CopyWebpackPlugin({
       patterns: [{ from: './public' }],
     }),
+    ...getPagesTemplate,
   ],
 };

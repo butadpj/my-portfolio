@@ -72,7 +72,7 @@
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/navbar.css" />
     <link rel="stylesheet" href="./css/project-details.css" />
-    <title>Project - Game-Antena</title>
+    <title>Project - Game-Antena (backend)</title>
   </head>
   <body>
     <nav class="navbar">
@@ -146,7 +146,7 @@
 
         <h2 class="section-title secondary">
           Project -
-          <div>Game-Antena</div>
+          <div>Game-Antena (backend)</div>
         </h2>
       </div>
 
@@ -156,22 +156,25 @@
       >
         <div
           class="parallax-bg"
-          style="background-image: url(./assets/slider-bg-ga.png)"
+          style="background-image: url(./assets/slider-bg-ga-backend.png)"
           data-swiper-parallax="-23%"
         ></div>
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="title" data-swiper-parallax="-300">The purpose</div>
             <div class="text" data-swiper-parallax="-100">
-              <p>To keep users connected with everything in gaming</p>
+              <p>
+                To provide seamless data processing and API handling for
+                Game-Antena's frontend
+              </p>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="title" data-swiper-parallax="-300">The approach</div>
             <div class="text" data-swiper-parallax="-100">
               <p>
-                Integrate big platform's services that are related to gaming &
-                streaming
+                Develop simple and easy to use API endpoints that the frontend
+                would use
               </p>
             </div>
           </div>
@@ -183,30 +186,38 @@
 
       <div class="project-info">
         <div class="description">
-          Game-Antena is my first client's project I've ever worked on. My
-          client had already developed the initial website,
-          <span
-            ><a href="https://old.game-antena.com" target="_blank"
-              >check it here</a
-            ></span
-          >. My task was to <span>improve every aspects of it</span> and
-          <span>take his existing ideas into a real working app</span>.
+          Developing Game-Antena's API (backend) has brought me lot of
+          challenges to face. First was the
+          <span>3rd party API services integration</span>. It was hard at first
+          since it was my first time doing integration. But my years of
+          expertise on <span>reading documentations</span> and
+          <span>self learning</span> has helped me a lot.
 
           <br /><br />
 
-          After a span of 3 months, the MVP was done and ready to be launch on
-          public. The project is still ongoing as there's still extra
-          requirements to be submitted on Google for the app verification.
+          The next challenge was keeping the backend
+          <span>maintainable</span> and <span>scalable</span>. I've learned that
+          it is better to do things correctly at first than to suffer from
+          technical debts on the future.
+
+          <br /><br />
+
+          Those are just simple challenges I've faced but I'm still glad I was
+          able to experience those. Those only made me a better developer than I
+          am years ago
         </div>
 
         <div class="buttons">
-          <a href="https://github.com/nismocoder/GameAntena" target="_blank">
+          <a href="https://github.com/butadpj/ga_backend" target="_blank">
             <button class="outline-dark">
               Repo <i class="fa-brands fa-github"></i>
             </button>
           </a>
 
-          <a href="https://game-antena.com" target="_blank">
+          <a
+            href="https://api.game-antena.com/twitch/gaming-streams"
+            target="_blank"
+          >
             <button class="outline">Live demo</button>
           </a>
         </div>
@@ -214,35 +225,15 @@
         <div class="technologies">
           <h2>Technologies:</h2>
           <ul class="technologies-list">
-            <li><span>Frontend</span> - ReactJS, Redux, React Query</li>
-            <li>
-              <a href="./project-ga-backend.html"><span>Backend</span></a>
-              - NestJS, TypeScript, Docker, PostgreSQL
-            </li>
-            <li>
-              <span>Quality Assurance</span> - Jest, React testing library
-            </li>
+            <li><span>Language/Tools</span> - NestJS (TypeScript), Docker</li>
+            <li><span>Database</span> - PostgreSQL, TypeORM</li>
+            <li><span>Quality Assurance</span> - Jest</li>
+            <li><span>Hosting</span> - Heroku</li>
           </ul>
         </div>
       </div>
     </main>
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-      // Initialize Swiper
-      var swiper = new Swiper('.mySwiper', {
-        speed: 600,
-        parallax: true,
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-      });
-    </script>
-    <script src="bundle.js"></script>
   </body>
 </html>
