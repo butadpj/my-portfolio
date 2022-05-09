@@ -1,1 +1,1 @@
-import '../project-details';
+import '../modules/project-details.js';
