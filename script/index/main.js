@@ -1,7 +1,7 @@
-import '../scrollToTop';
-import '../navbar';
-import '../collapsible';
-import '../parallax';
+import '../modules/scrollToTop.js';
+import '../modules/navbar.js';
+import '../modules/collapsible.js';
+import '../modules/parallax.js';
 import Butter from 'butter-es6';
 
 Butter.init({

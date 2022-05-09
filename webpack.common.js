@@ -1,10 +1,22 @@
-const path = require('path');
-const { chunksEntryPoints } = require('./utils/chunksEntryPoints');
-const { getPagesTemplate } = require('./utils/getPagesTemplate');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
+import path from 'path';
+import {
+  getPageTemplatesChunkEntryPoints,
+  getPageTemplatesWithChunk,
+  htmlWebpackPluginTemplates,
+  createPageTemplates,
+  getScriptFoldersIn,
+  getPageNamesIn,
+} from 'modern-web-dev-utils';
 
-module.exports = {
-  entry: chunksEntryPoints,
+import CopyWebpackPlugin from 'copy-webpack-plugin';
+
+const __dirname = path.resolve();
+
+export default {
+  entry: getPageTemplatesChunkEntryPoints(
+    getPageTemplatesWithChunk('./pages', './script'),
+    './script',
+  ),
   output: {
     path: path.resolve(__dirname, 'build/'),
     filename: 'js/[name].js',
@@ -13,6 +25,11 @@ module.exports = {
     new CopyWebpackPlugin({
       patterns: [{ from: './public' }],
     }),
-    ...getPagesTemplate,
+    ...htmlWebpackPluginTemplates(
+      createPageTemplates(
+        getPageNamesIn('./pages'),
+        getScriptFoldersIn('./script'),
+      ),
+    ),
   ],
 };

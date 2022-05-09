@@ -1,5 +1,5 @@
-import './navbar';
-import './scrollToTop';
+import './navbar.js';
+import './scrollToTop.js';
 import Butter from 'butter-es6';
 
 new Swiper('.mySwiper', {
