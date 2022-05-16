@@ -6,7 +6,9 @@ export default merge(common, {
   devtool: 'inline-source-map',
   devServer: {
     port: 3005,
+    static: ['./public', './pages'],
     compress: true,
-    static: './public',
+    hot: 'only',
+    open: true,
   },
 });
