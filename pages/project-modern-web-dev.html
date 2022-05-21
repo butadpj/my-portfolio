@@ -63,6 +63,7 @@
       sizes="16x16"
       href="./favicon-16x16.png"
     />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
     <!-- Link Swiper's CSS -->
     <link
       rel="stylesheet"
@@ -72,8 +73,9 @@
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/navbar.css" />
     <link rel="stylesheet" href="./css/project-details.css" />
-    <title>Project - Game-Antena</title>
+    <title>Project - Modern Web Dev</title>
   </head>
+
   <body>
     <nav class="navbar">
       <div class="navbar-logo hoverable scrollToTop">
@@ -146,7 +148,7 @@
 
         <h2 class="section-title secondary">
           Project -
-          <div>Game-Antena</div>
+          <div>Modern Web Dev</div>
         </h2>
       </div>
 
@@ -156,22 +158,52 @@
       >
         <div
           class="parallax-bg"
-          style="background-image: url(./assets/slider-bg-ga.png)"
+          style="background-image: url(./assets/slider-bg-modern-web-dev.png)"
           data-swiper-parallax="-23%"
         ></div>
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="title" data-swiper-parallax="-300">The purpose</div>
             <div class="text" data-swiper-parallax="-100">
-              <p>To keep users connected with everything in gaming</p>
+              <p>
+                My goal was to generate a multi-page web app boilerplate like
+                create-react-app
+              </p>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="title" data-swiper-parallax="-300">The approach</div>
             <div class="text" data-swiper-parallax="-100">
               <p>
-                Integrate big platform's services that are related to gaming &
-                streaming
+                Create small separate packages to be used in
+                create-modern-web-dev
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="title" data-swiper-parallax="-300">Package #1</div>
+            <div class="text" data-swiper-parallax="-100">
+              <p>
+                Utility package that will be used in webpack configuration -
+                <a
+                  href="https://www.npmjs.com/package/modern-web-dev-utils"
+                  target="_blank"
+                  >modern-web-dev-utils</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="title" data-swiper-parallax="-300">Package #2</div>
+            <div class="text" data-swiper-parallax="-100">
+              <p>
+                Package to contain webpack configuration and package.json
+                scripts -
+                <a
+                  href="https://www.npmjs.com/package/modern-web-dev-scripts"
+                  target="_blank"
+                  >modern-web-dev-scripts</a
+                >
               </p>
             </div>
           </div>
@@ -183,45 +215,51 @@
 
       <div class="project-info">
         <div class="description">
-          Game-Antena is the first client project I've ever worked on. My client
-          had already developed the initial website,
-          <span
-            ><a href="https://old.game-antena.com" target="_blank"
-              >check it here</a
-            ></span
-          >. My task was to <span>improve every aspects of it</span> and
-          <span>take his existing ideas into a real working app</span>.
+          Developing static websites with multiple pages (like this website)
+          don't need the complexity of modern frameworks like React, Vue, or
+          Angular. But maintaining websites built with plain HTML, CSS, and JS
+          without structure is difficult as well.
 
           <br /><br />
 
-          After a span of 3 months, the MVP was done and ready to be launch on
-          public. The project is still ongoing as there's still extra
-          requirements to be submitted on Google for the app verification.
+          That's why <span>Modern Web Dev</span> is born. It brings structure to
+          the messy development environment "vanilla" brings. You don't have to
+          learn another framework just to build simple static websites for your
+          personal or business needs.
+
+          <br /><br />
+
+          Easily setup Modern Web Dev on your own with this simple command
+          <br />
+          <code class="block">npx create-modern-web-dev my-app</code>
+
+          Just like <code>create-react-app</code> 😉
         </div>
 
         <div class="buttons">
-          <a href="https://github.com/nismocoder/GameAntena" target="_blank">
+          <a
+            href="https://github.com/butadpj/create-modern-web-dev"
+            target="_blank"
+          >
             <button class="outline-dark">
               Repo <i class="fa-brands fa-github"></i>
             </button>
           </a>
 
-          <a href="https://game-antena.com" target="_blank">
-            <button class="outline">Live demo</button>
+          <a
+            href="https://api.game-antena.com/twitch/gaming-streams"
+            target="_blank"
+          >
+            <button class="outline">Check it on NPM</button>
           </a>
         </div>
 
         <div class="technologies">
           <h2>Technologies:</h2>
           <ul class="technologies-list">
-            <li><span>Frontend</span> - ReactJS, Redux, React Query</li>
-            <li>
-              <a href="./project-ga-backend.html"><span>Backend</span></a>
-              - NestJS, TypeScript, Docker, PostgreSQL
-            </li>
-            <li>
-              <span>Quality Assurance</span> - Jest, React testing library
-            </li>
+            <li><span>Language</span> - JavaScript/TypeScript & NodeJS</li>
+            <li><span>Quality Assurance</span> - Jest</li>
+            <li><span>Build Tool</span> - Webpack</li>
           </ul>
         </div>
       </div>

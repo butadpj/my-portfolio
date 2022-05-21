@@ -11,6 +11,7 @@
   --accent-fade: rgb(238, 104, 7, 0.1);
 
   --dark: rgb(18, 18, 19);
+  --dark-fade: rgb(18, 18, 19, 0.8);
   --light: rgb(242, 242, 242);
   --light-bg: rgb(238, 243, 255);
 
@@ -35,6 +36,11 @@ h2,
 h3,
 h4 {
   font-weight: 500;
+}
+
+strong {
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 a {
@@ -109,18 +115,18 @@ button.outline-dark {
 button.outline:hover {
   color: var(--light);
   border: 1px solid var(--primary-dark);
-  box-shadow: inset 8rem 0 0 0 var(--primary-dark);
+  box-shadow: inset 12rem 0 0 0 var(--primary-dark);
 }
 
 button.outline-light:hover {
   border: 1px solid var(--dark);
-  box-shadow: inset 8rem 0 0 0 var(--dark);
+  box-shadow: inset 12rem 0 0 0 var(--dark);
 }
 
 button.outline-dark:hover {
   color: var(--light);
   border: 1px solid var(--dark);
-  box-shadow: inset 8rem 0 0 0 var(--dark);
+  box-shadow: inset 12rem 0 0 0 var(--dark);
 }
 
 ul {
@@ -177,4 +183,26 @@ ul {
 #butter {
   position: relative;
   overflow-x: hidden;
+}
+
+code {
+  display: inline-block;
+  padding: 0.3rem;
+  border-radius: 5px;
+  background-color: var(--light);
+  color: var(--primary-dark);
+  font-weight: 500;
+}
+
+code.block {
+  display: block;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border-radius: 10px;
+  border: 1px solid var(--primary-dark);
+}
+
+::selection {
+  color: var(--light);
+  background: var(--primary-dark);
 }
