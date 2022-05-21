@@ -201,3 +201,8 @@ code.block {
   border-radius: 10px;
   border: 1px solid var(--primary-dark);
 }
+
+::selection {
+  color: var(--light);
+  background: var(--primary-dark);
+}
