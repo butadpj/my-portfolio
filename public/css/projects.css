@@ -14,7 +14,7 @@
 .preview {
   position: relative;
   border-radius: 10px;
-  max-width: 20rem;
+  max-width: 23rem;
   box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
 }
 
@@ -50,6 +50,17 @@
   font-weight: 500;
 }
 
+.preview-logo.text {
+  display: flex;
+  gap: 0.3rem;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 0;
+  font-size: 1.4rem;
+  font-family: var(--font-2);
+  font-weight: 500;
+}
+
 .preview-info {
   color: var(--light);
   padding: 1rem 1.5rem 1.5rem 1.5rem;
@@ -64,12 +75,14 @@
 .preview-buttons {
   font-size: 1rem;
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
+  padding: 0 0.5rem;
   justify-content: space-between;
 }
 
 .preview-buttons button {
-  padding: 0.5rem 0.8rem;
+  padding: 0.5rem 1rem;
 }
 
 .preview-info .tags {
@@ -86,6 +99,12 @@
   font-size: 0.9rem;
   font-family: var(--font-2);
   font-weight: 500;
+}
+
+.postscript {
+  font-weight: 400;
+  font-size: 0.9rem;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
